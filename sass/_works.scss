@@ -1,0 +1,137 @@
+.works {
+    background-color: $color-secondary-light;
+    position: absolute;
+    transform: translateX(100%);
+    transition: all .8s;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (max-width:$bp-small ) {
+        padding-top:8rem ;
+        grid-template-rows: repeat(2, 50vh);
+        overflow: scroll;
+       
+    }
+
+    &__piccontainer {
+        overflow: hidden;
+        
+        @media only screen and (max-width:$bp-small ) {
+            grid-column: 1 /3;
+        }
+    }
+
+    &__piccontainer *{
+        height: 100vh;
+        width: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media only screen and (max-width:$bp-small ) {
+            height: 50vh;
+            
+        }
+    }
+
+    &__view {
+        font-size: 1.6rem;
+        text-align: right;
+        text-decoration: none;
+        color: $color-primary;
+        margin-right: 2rem;
+        font-weight: 300;
+        font-style: italic;
+        transition: all ease .3s;
+        
+        @media only screen and (max-width:$bp-medium ) {
+            margin-right: 0;
+            justify-self: end;
+        }
+
+        &-icon {
+            padding-top: 5px;
+            height: 1.5rem;
+            width: 1.5rem;
+            fill: $color-primary;
+        }
+
+        &:hover {
+            transform: translateX(1rem);
+        }
+    }
+
+
+    &__list {
+        overflow: scroll;
+        height: 100vh;
+        width: 100%;
+        grid-column: 2 / 3;
+        padding: 15vh 10vw 20vh 0vw;
+        list-style: none;
+        transition: all .3s;
+
+        display: grid;
+
+        @media only screen and (max-width:$bp-small ) {
+            grid-row: 2/ 3;
+            grid-column: 1 / 3;
+            padding:0;
+            margin-bottom: 10rem;
+            height: auto;
+        }
+
+        &-title {
+           font-size: 1.6rem; 
+           font-weight:300;
+           padding: 3rem 3rem 3rem 7rem;
+
+           @media only screen and (max-width:$bp-medium ) {
+            padding: 1rem 1rem 1rem 3rem;
+            }
+
+            @media only screen and (max-width:$bp-small ) {
+                display: none;
+            }
+
+        }
+
+        &-hidden {
+            display: none;
+            @media only screen and (max-width:$bp-small ) {
+                display: block; 
+                padding-left: 6rem;
+                transform: rotate(-90deg) translate(-21rem, 5rem);
+                
+                transform-origin: bottom left ;
+                position: fixed;
+                -webkit-backface-visibility: hidden;     
+            }
+        }
+
+        &-item{            
+            position: relative;
+            //float: left;
+            padding: 3rem 3rem 3rem 7rem;
+            width: 100%;
+            height: 100%;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.6rem;    
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media only screen and (max-width:$bp-medium ) {
+                padding: 2rem 1rem 2rem 4rem;
+            }
+            @media only screen and (max-width:$bp-small ) {
+                padding: 2rem 6rem;
+                
+            }
+        }
+    }
+}

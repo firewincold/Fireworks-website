@@ -1,0 +1,103 @@
+.about {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    transform: translate(-100%, 0);
+    transition: all .8s;
+    background-color: $color-secondary-light;
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    overflow: scroll;
+
+    @media only screen and (max-width:$bp-small ) {
+        grid-template-columns: 1fr;
+        grid-template-rows:  35% 75%;   
+        padding: 3rem;
+        grid-gap: 1rem;
+    }
+
+    &__profile {
+        
+        width: 50%;
+        justify-self: end;
+
+        @media only screen and (max-width:$bp-medium ) {
+            width: 60%;
+        }
+
+        @media only screen and (max-width:$bp-small ) {
+            width: 35%;
+            justify-self: center;
+            align-self: end;
+        }
+    }
+
+    &__right {
+        padding: 13rem 23rem 10rem 10rem;
+        justify-items: start;
+        align-self: center;
+        color: $color-primary;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+
+        display: grid;
+        grid-gap: 2rem;
+        
+        @media only screen and (max-width:$bp-largest ) {
+            padding: 13rem 20rem 10rem 6rem;
+        }
+
+        @media only screen and (max-width:$bp-medium ) {
+            padding: 13rem 13rem 10rem 6rem;
+            grid-gap: 1rem;
+        }
+
+        @media only screen and (max-width:$bp-small ) {
+            padding: 2rem;
+            justify-items: center;
+            
+            align-self: start;
+        }
+
+        &-text1 {
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        &-text2 {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+
+        &-cv {
+            margin-top: 2.5rem;
+            justify-self: start;
+            font-size: 2rem;
+            color: $color-secondary-light;
+            text-decoration: none;
+            background-color: $color-primary;
+            padding:1rem 3rem;
+            
+            
+            @media only screen and (max-width:$bp-medium ) {
+                margin-top: 1.5rem;
+            }
+
+            @media only screen and (max-width:$bp-small ) {
+                justify-self: center;
+                margin-bottom: 10rem;
+
+            }
+
+            &:hover {
+                background-color: $color-primary-light;
+                color: $color-primary;
+            }
+        }
+    }
+}

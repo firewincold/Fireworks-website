@@ -1,0 +1,49 @@
+.btn {
+    
+    font-size: 1.6rem;
+    padding:.5rem;
+
+    &:hover {
+        background-color: $color-primary;
+        color:$color-secondary-light ;
+    }
+
+    @media only screen and (max-width:$bp-small ) {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+}
+
+//workslist scroll button----------------
+.works__list .works__list-item:nth-child(7)::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background-color: $color-third-light;
+    position: absolute;
+    top: 0;
+    transition: .3s all ease;
+    z-index: -1;
+    left: 0px;
+
+}
+
+
+//.btn-active:first-child ~ .works__list-item::before {
+//    transform: translateY(- 500%);
+//}
+.btn-active:nth-child(2) ~ .works__list-item::before {
+    transform: translateY(- 500%);
+}
+.btn-active:nth-child(3) ~ .works__list-item::before {
+    transform: translateY(- 400%);
+}
+.btn-active:nth-child(4) ~ .works__list-item::before {
+    transform: translateY(- 300%);
+}
+.btn-active:nth-child(5) ~ .works__list-item::before {
+    transform: translateY(- 200%);
+}
+.btn-active:nth-child(6) ~ .works__list-item::before {
+    transform: translateY(- 100%);
+}

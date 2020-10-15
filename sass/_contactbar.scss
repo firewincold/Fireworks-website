@@ -1,0 +1,114 @@
+.contact-bar {
+    z-index: 100000;
+    font-family:$font-primary;
+    background-color: $color-third-light;
+    padding: 2em;
+    bottom: -5rem;
+
+
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 2rem;
+
+    -webkit-transition: all .2s;
+    transition: all .2s;
+
+    @media only screen and (max-width:$bp-small ) {
+        display: none;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr ;
+        bottom: -13rem;
+    }
+    
+    &:hover {
+        -webkit-transform: translate(-50%,  -5rem);
+        transform: translate(-50%, -5rem);
+        @media only screen and (max-width:$bp-small ) {
+            -webkit-transform: translate(-50%,  -13rem);
+            transform: translate(-50%, -13rem);
+        }
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: .5rem;
+        grid-column: 1/ 4 ;
+        @media only screen and (max-width:$bp-small ) {
+            grid-column: 1/ 2;
+        }
+    }
+
+    &__detail {
+        justify-self: center;
+        font-size: 1.4rem;
+        font-weight: 300;
+        z-index: 1;
+        line-height: 2rem;
+
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: $color-primary;
+        transform: translateY(5px);
+
+    }
+
+    &__info {
+        position: absolute;
+        width: 100%;
+        display: inline-block;
+        
+        @media only screen and (max-width:$bp-small ) {
+            display: none;
+        }
+    }
+
+    &__info-detail {
+        text-align: left;
+        transform: translateY(-100%);;
+        font-weight: 300;
+        font-size: 1.4em;
+        color: $color-primary;
+    }
+
+}
+
+.hidden {
+    padding-top: 1rem;
+    display: none;
+    width: 100%;
+    
+
+    &__title {
+        font-weight: 300;
+        text-decoration: underline;
+        padding-bottom: .5rem;   
+    }
+
+    &__detail {
+    padding-bottom: .5rem;
+    }
+
+    &__icon {
+        fill: $color-primary;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    @media only screen and (max-width:$bp-small ) {
+        display: block;
+    }
+
+}

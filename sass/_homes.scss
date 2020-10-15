@@ -1,0 +1,228 @@
+.home {
+    background-color: $color-secondary-light;
+    height: 100vh;
+    display: grid;
+    grid-template-rows:min-content 1fr ;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 8rem;
+    position:absolute;
+    transition: all, .8s;
+
+    @media only screen and (max-width:$bp-largest ) {
+        padding: 4rem 5rem;
+    }
+
+    @media only screen and (max-width:$bp-medium ) {
+        padding: 4rem 2rem;
+    }
+
+    @media only screen and (max-width:$bp-small ) {
+        padding:3rem;
+    }
+
+    @media only screen and (max-width:$bp-medium ) {
+        grid-template-rows:repeat(3, 1fr) ;
+    }
+
+    &__dots {
+        transition: all, .8s;
+
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    &__dot-1 {
+        background-color: $color-primary;
+        top:32%;
+        left: 28%;
+        animation:moveAround1 3s ease-in-out infinite;
+        @media only screen and (max-width:$bp-small ) {
+            top:22%;
+            left: 18%;
+        }
+    }
+
+    &__dot-2 {
+        background-color: $color-secondary;
+        top:68%;
+        left: 30%;
+        animation:moveAround2 5s ease-in-out infinite;
+        @media only screen and (max-width:$bp-small ) {
+            top:52%;
+            left: 28%;
+        }
+    }
+
+    &__dot-3 {
+        background-color: $color-third;
+        top:50%;
+        left: 75%;
+        animation:moveAround3 4s ease-in-out infinite;
+
+    }
+
+    &__dot-4 {
+        background-color: $color-primary;
+        top:70%;
+        left: 65%;
+        animation:moveAround1 5s ease-in-out infinite;
+        @media only screen and (max-width:$bp-small ) {
+            top:48%;
+            left: 54%;
+        }
+    }
+
+    &__dot-5 {
+        background-color: $color-secondary;
+        top:20%;
+        left: 65%;
+        animation:moveAround2 4s ease-in-out infinite;
+        @media only screen and (max-width:$bp-small ) {
+            top:22%;
+            left: 78%;
+        }
+    }
+
+    &__dot-6 {
+        background-color: $color-third;
+        top:23%;
+        left: 45%;
+        animation:moveAround3 6s ease-in-out infinite;
+        @media only screen and (max-width:$bp-small ) {
+            top:18%;
+            left: 45%;
+        }
+    }
+
+
+    &__secondary-logo {
+        width: 18rem;
+        position: absolute;
+        z-index: 2000;
+        top: 5rem;
+        left: 8rem;
+
+        @media only screen and (max-width:$bp-largest ) {
+            top: 4.5rem;
+            left: 7rem;
+        }
+
+        @media only screen and (max-width:$bp-medium ) {
+            top: 4rem;
+            left: 6rem;
+        }
+
+        @media only screen and (max-width:$bp-small ) {
+            top: 3rem;
+            left: 3rem;
+        }
+    }
+
+    &__logo {
+        width: 120%;
+        margin-bottom: 10rem;
+        align-self: center;
+        justify-self: center;
+        grid-row: 2/3;
+        grid-column: 2/ 3;
+        transition: all, .8s;
+ 
+        @media only screen and (max-width:$bp-small ) {
+            grid-row: 2 /3;
+            justify-self: center;
+            width: 200%;
+            align-self: start;
+            margin-bottom: 30vh;
+        }
+
+        @keyframes moveAround1 {
+            0%   {transform:translate(1rem,0rem);}
+            25%  {transform:translate(0, -.5rem);}
+            50%  {transform:translate(-1rem, 0rem);}
+            75%  {transform:translate(0, .5rem);}
+            100% {transform:translate(1rem,0rem);}
+        }
+
+        @keyframes moveAround2 {
+            0%   {transform:translate(1rem,0rem);}
+            25%  {transform:translate(0, .5rem);}
+            50%  {transform:translate(-1rem, 0rem);}
+            75%  {transform:translate(0, -.5rem);}
+            100% {transform:translate(1rem,0rem);}
+        }
+
+        @keyframes moveAround3 {
+            0%   {transform:translate(0,0rem);}
+            25%  {transform:translate(1rem, .5rem);}
+            50%  {transform:translate(0, 0rem);}
+            75%  {transform:translate(1rem, -.5rem);}
+            100% {transform:translate(0,0rem);}
+        }
+    }
+
+    &__btn-left {
+        grid-row: 2/3;
+        grid-column: 1/ 2; 
+        align-self: center;
+        justify-self: start;
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        z-index: 2000;
+        
+        @media only screen and (max-width:$bp-small ) {
+            grid-row: 1/ 2;
+            grid-column: 3/ 4; 
+            transform: rotate(0deg);
+            align-self: start;
+            text-decoration: underline;
+            //border: solid 1px $color-primary;
+            color: $color-primary;
+        }
+    }
+
+    &__btn-right {
+        grid-row: 2/3;
+        grid-column: 3/ 4; 
+        align-self: center;
+        justify-self: end;
+        transform: rotate(90deg);
+        transform-origin: top right;
+        z-index: 2000;
+
+        @media only screen and (max-width:$bp-small ) {
+            grid-row: 1/ 2;
+            grid-column: 3/ 4; 
+            transform: rotate(0deg);
+            align-self: start;
+            text-decoration: underline;
+            //border: solid 1px $color-primary;
+            color: $color-primary;
+        }
+    }
+
+
+}
+.social-media {
+    grid-column: 3 /4;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 5rem;
+
+    & *{
+        display: inline-block;     
+        height: 2rem;
+        width: 2rem;
+        margin: .8rem;
+        fill: $color-primary;
+    }
+    
+    @media only screen and (max-width:$bp-small ) {
+       grid-column: 2 /3;
+       grid-row: 3 /4;
+       align-self: start;
+       margin:0 auto;
+
+    }
+}

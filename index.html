@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favcon-logo.png">
+        
+        <title>Fireworks &mdash; Design</title>
+    </head>
+    <body class="body-container" >
+        
+        <div class="contact-bar">
+                <p class="contact-bar__title">
+                    CONTACT
+                </p>
+                <p class="contact-bar__detail">
+                    <svg class="contact-bar__email contact-bar__icon ">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                    : hellen_huo@hotmail.com</p>
+                <p class="contact-bar__detail ">
+                    <svg class="contact-bar__mobile contact-bar__icon">
+                        <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                    </svg>
+                    : +44 (0) 7529938489</p>
+                <p class="contact-bar__detail">
+                    <svg class="contact-bar__location contact-bar__icon">
+                        <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                    </svg>
+                    : London, UK
+                </p>
+                <div class="contact-bar__info">
+                    <p class="contact-bar__info-detail">
+                        © 2020 - ALL RIGHTS RESERVED Designed and developed by Shenghan Huo
+                    </p>
+                </div>
+        </div>
+        
+        <div class="home " >            
+            <img src="img/secondary-logo.png" onClick="goHome()" alt="" class="home__secondary-logo">
+            <div class="social-media">
+                <svg class="social-media__ins">
+                    <a href="https://www.instagram.com/firewincold/" target="_blank"><use xlink:href="img/sprite.svg#icon-instagram"></use></a>
+                </svg>
+                <svg class="social-media__behance">
+                    <a href="https://www.behance.net/firewincold" target="_blank"><use xlink:href="img/sprite.svg#icon-behance"></use></a>
+                </svg>
+                <svg class="social-media__facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100006057377950" target="_blank"><use xlink:href="img/sprite.svg#icon-facebook"></use></a>
+                </svg>
+            </div>
+            <img src="img/main-logo.png" alt="" class="home__logo" id="home__logo" >
+            <div class="home__dots home__dot-1"></div>
+            <div class="home__dots home__dot-2 "></div>
+            <div class="home__dots home__dot-3 "></div>
+            <div class="home__dots home__dot-4"></div>
+            <div class="home__dots home__dot-5"></div>
+            <div class="home__dots home__dot-6"></div>
+            <div  class="home__btn-left btn " onclick="goRight() " >ABOUT</div>
+            <div  class="home__btn-right btn stop-video" id="work" onclick="goLeft();defaultActive()">WORKS</div>
+        </div>
+
+        <div class="works" id="works">   
+            <div class="works__piccontainer">
+                <img src="img/hero/project1-hero.jpg" id="hero" href="../index.html" alt="" class="works__piccontainer-p1">
+            </div>        
+            <ol class="works__list " >
+                <p class="works__list-title">SELECTED PROJECTS</p>
+                <!--<p class="works__list-title works__list-hidden">SCROLL TO SEE MORE</p>-->
+                <li href="" class="works__list-item btn-active" id="hero1" data-val="0" onclick="switchPic1()">
+                    FAMILY CALENDAR
+                    <a class=" works__view" onclick="container1Left()">view 
+                        <svg class="works__view-icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                    </a>  
+                </li>
+                <li href="" class="works__list-item" data-val="1" onclick="switchPic2()">
+                    MUSEUM OF "_S"
+                    <a class=" works__view" onclick="container2Left()">view 
+                        <svg class="works__view-icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                    </a> 
+                </li>  
+                <li href="" class="works__list-item" data-val="2" onclick="switchPic3()">
+                    PROJECT "MARSTER"
+                    <a class=" works__view" onclick="container3Left()">view
+                        <svg class="works__view-icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                    </a> 
+                </li> 
+                <li href="" class="works__list-item" data-val="3" onclick="switchPic4()">
+                    WILDRE
+                    <a class=" works__view" onclick="container4Left()">view
+                        <svg class="works__view-icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                    </a> 
+                </li>   
+                <li href="" class="works__list-item " data-val="4" onclick="switchPic5()">
+                    Pom & Co
+                    <a class=" works__view" onclick="container5Left()">view
+                        <svg class="works__view-icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                    </a> 
+                </li>  
+                <li href="" class="works__list-item " data-val="5" onclick="switchPic6()">
+                    FIREWORKS
+                    <a class=" works__view" onclick="container6Left()">view
+                        <svg class="works__view-icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                    </a> 
+                </li> 
+                <li href="" class="works__list-item " data-val="6">
+                     
+                    <a href="" class=" works__view"> </a> 
+                </li> 
+            </ol>                     
+        </div>
+
+        <div class="container1" id="container1">
+            <div class="block">
+                <div class="block-intro">
+                    <div class="block-intro__icon">
+                        <div class="block-intro__icon-title">
+                            SCROLL TO SEE MORE
+                        </div>
+                        <svg class="block-intro__icon-1">
+                            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                        </svg>
+                    </div>
+                    <div class="block-intro__title">FAMILY CALENDAR</div>
+                    <div class="block-intro__detail">
+                        <!-- <div class="block-intro__detail-title">SKILLS:</div> --> 
+                        <div class="block-intro__detail-text"> Packaging DESIGN / ILLUSTRATION</div>
+                    </div>
+                    <p class="block-intro__text">
+                       made in 2017
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block block1 block1__pic1"><img src="img/1/p1-2.jpg"></div>
+            <div class="block">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            This is a Calendar aim to urge people to visit their parents more often by presenting the ageing process of people in 12 espects.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block block1 block1__pic2"><img src="img/1/p1-1.jpg"></div>
+            <div class="block block1 block1__pic3"><img src="img/1/p1-3.jpg"></div>
+            <div class="block block1 block1__pic4"><img src="img/1/p1-4.jpg"></div>
+            <div class="block">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            Each day, a page of calendar should be put manually on the wall when you do not see your parents. The more you see your parents, the healthier or younger image would appear on the calendar.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block block1 block1__pic5"><img src="img/1/p1-8.jpg"></div>
+            <div class="block">
+                <div class="block-end">
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container2" id="container2">
+            <div class="block2">
+                <div class="block-intro">
+                    <div class="block-intro__icon">
+                        <div class="block-intro__icon-title">
+                            SCROLL TO SEE MORE
+                        </div>
+                        <svg class="block-intro__icon-1">
+                            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                        </svg>
+                    </div>
+                    <div class="block-intro__title">MUSEUM OF "_S"</div>
+                    <div class="block-intro__detail">
+                        <!-- <div class="block-intro__detail-title">SKILLS:</div> --> 
+                        <div class="block-intro__detail-text"> ANIMATION / COLLAGE / GROUP WORK</div>
+                    </div>
+                    <p class="block-intro__text">
+                       made in 2018
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block2 block2__pic1">
+                <div class="block2__video">
+                    <img src="img/2/p2-1.png" alt="">
+                    asda
+                    <!--<iframe id="video" src="https://player.vimeo.com/video/247411626?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+                </div>
+
+
+            </div>
+            <!--<div class="block2 block2__pic2"><img src="img/1/p1-2.jpg"></div>-->
+
+            <div class="block2">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                           Different opinions are collected from the audience in front of the replica of DAVID statue in the V&A museum, and made into the soundtrack of this video.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="block2__video">
+                    <iframe id="video" src="https://player.vimeo.com/video/247411626?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="block-end">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3" id="container3">
+            <div class="block3">
+                <div class="block-intro">
+                    <div class="block-intro__icon">
+                        <div class="block-intro__icon-title">
+                            SCROLL TO SEE MORE
+                        </div>
+                        <svg class="block-intro__icon-1">
+                            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                        </svg>
+                    </div>
+                    <div class="block-intro__title">PROJECT "MARSTER"</div>
+                    <div class="block-intro__detail">
+                        <!-- <div class="block-intro__detail-title">SKILLS:</div> --> 
+                        <div class="block-intro__detail-text"> ACTIVITY / ILLUSTRATION / PRINTING</div>
+                    </div>
+                    <p class="block-intro__text">
+                       designed in 2018
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block3  block3__pic1"><img src="img/3/p3-1.jpg"></div>
+            <div class="block3">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            Knowledge is not always good. Sometimes, what we know can get in the way of what a thing could be. In this light, School of ForGetting holds ‘forgetting’as a starting point, which leads to different pathways to refreshing our perspectives on life and surroundings.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block3 block3__pic2"><img src="img/3/p3-2.jpg"></div>
+            <div class="block3 block3__pic3"><img src="img/3/p3-3.jpg"></div>
+            <div class="block3 block3__pic4"><img src="img/3/p3-4.jpg"></div>
+            <div class="block3">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            Project "MARSTER" is one of the projects in "school of forgetting". At the event, people took part in four different games which is a group work as a whole.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block3 block3__pic5"><img src="img/3/p3-5.jpg"></div>
+            <div class="block3">
+                <div class="block-end">
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container4" id="container4">
+            <div class="block4">
+                <div class="block-intro">
+                    <div class="block-intro__icon">
+                        <div class="block-intro__icon-title">
+                            SCROLL TO SEE MORE
+                        </div>
+                        <svg class="block-intro__icon-1">
+                            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                        </svg>
+                    </div>
+                    <div class="block-intro__title">WILDRE</div>
+                    <div class="block-intro__detail">
+                        <!-- <div class="block-intro__detail-title">SKILLS:</div> --> 
+                        <div class="block-intro__detail-text"> PACKAGING / ILLUSTRATION / COMMUNITY</div>
+                    </div>
+                    <p class="block-intro__text">
+                       designed in 2018
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block4  block4__pic1"><img src="img/4/p4-6.jpg"></div>
+            <div class="block4">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            Wire wild flower is a project whose aim is to save endangered wild plants on road verges in England by turning them into gardening products.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block4 block4__pic2"><img src="img/4/p4-2.jpg"></div>
+            <div class="block4 block4__pic3"><img src="img/4/p4-3.jpg"></div>
+            <div class="block4 block4__pic4"><img src="img/4/p4-4.jpg"></div>
+            <div class="block4">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            A pot of an egg shape means new life and hope. The fragile egg shell indicates that the endangered plants need to be protected.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block4 block4__pic5"><img src="img/4/p4-5.jpg"></div>
+            <div class="block4">
+                <div class="block-end">
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container5" id="container5">
+            <div class="block5">
+                <div class="block-intro">
+                    <div class="block-intro__icon">
+                        <div class="block-intro__icon-title">
+                            SCROLL TO SEE MORE
+                        </div>
+                        <svg class="block-intro__icon-1">
+                            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                        </svg>
+                    </div>
+                    <div class="block-intro__title">Pom & Co</div>
+                    <div class="block-intro__detail">
+                        <!-- <div class="block-intro__detail-title">SKILLS:</div> --> 
+                        <div class="block-intro__detail-text"> BRANDING / PACKAGING</div>
+                    </div>
+                    <p class="block-intro__text">
+                       designed in 2016
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block5  block5__pic1"><img src="img/5/p5-1.jpg"></div>
+            <div class="block5">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            Pom & Co is a fashion brand which is famous for fashion pattern design for Chinese troditional Qi-pao. Target audience are young and modern girls.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block5 block5__pic2"><img src="img/5/p5-2.jpg"></div>
+            <div class="block5 block5__pic3"><img src="img/5/p5-3.jpg"></div>
+            <div class="block5 block5__pic4"><img src="img/5/p5-7.jpg"></div>
+            <div class="block5">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            The logo is inspired by the troditional collar of Qi-pao, but also conveys a modern and elegant spirit.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block5 block5__pic5"><img src="img/5/p5-4.png"></div>
+            <div class="block5">
+                <div class="block-end">
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container6" id="container6">
+            <div class="block6">
+                <div class="block-intro">
+                    <div class="block-intro__icon">
+                        <div class="block-intro__icon-title">
+                            SCROLL TO SEE MORE
+                        </div>
+                        <svg class="block-intro__icon-1">
+                            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                        </svg>
+                    </div>
+                    <div class="block-intro__title">FIREWORKS</div>
+                    <div class="block-intro__detail">
+                        <!-- <div class="block-intro__detail-title">SKILLS:</div> --> 
+                        <div class="block-intro__detail-text"> BRANDING / WEB DESIGN / FRONT-END DEVELOPMENT </div>
+                    </div>
+                    <p class="block-intro__text">
+                       designed and coded in 2020
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block6  block6__pic1"><img src="img/6/p6-1.jpg"></div>
+            <div class="block6">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            This website you are browsing is a part of the project! Feel free to click around and see the wire-frame of the website.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block6 block6__pic2"><img src="img/6/p6-2.jpg"></div>
+            <div class="block6 block6__pic3"><img src="img/6/p6-3.jpg"></div>
+            <div class="block6 block6__pic4"><img src="img/6/p6-4.jpg"></div>
+            <div class="block6">
+                <div class="block-inbetween">
+                        <p class="block-inbetween__text">
+                            The font of the main logo is hand lettering. The bright colors shows the energetic, modern charachtors of this brand.
+                        </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="block6 block6__pic5"><img src="img/6/p6-5.jpg"></div>
+            <div class="block6">
+                <div class="block-end">
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about" id="about">           
+            <img src="img/profile.png"  alt="profile" class="about__profile">
+            <div class="about__right">
+                <div class="about__right-text1">Hi, this is Shenghan Huo. My surname means fire in Chinese. If you want, you can also call me FIRE!
+                </div> 
+                <div class="about__right-text2">
+                    Fireworks is my personal website full of Fire’s works.
+                    Starting from a graphic designer, I have got more and more interested in front-end development. In the meantime, I love the combination of visual design and coding. I am currently actively looking for a job. Collaboration and freelance are also welcomed!
+                </div> 
+                <div class="hidden">
+                    <p class="hidden__title">
+                        Contact me:
+                    </p>
+                    <p class="hidden__detail">
+                        <svg class="hidden__icon ">
+                            <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                        : hellen_huo@hotmail.com</p>
+                    <p class="hidden__detail ">
+                        <svg class="hidden__mobile hidden__icon">
+                            <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                        </svg>
+                        : +(44) 07529938489</p>
+                    <p class="hidden__detail">
+                        <svg class="hidden__location hidden__icon">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        : London, UK
+                    </p>
+                </div>
+                <a class="about__right-cv" href="img/cv.pdf" target="_blank">CV</a>
+            </div>
+         
+         </div>
+
+
+        <div class="cursor-dot-outline"></div>
+        <div class="cursor-dot"></div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="node_modules/horizontal-scroll/dist/index.js"></script>
+        <script src="works.js"></script>
+        <script src="home.js"></script>
+
+    </body>
+</html>
