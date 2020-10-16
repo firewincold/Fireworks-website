@@ -416,7 +416,7 @@ body {
         align-self: start;
         text-decoration: underline;
         color: #E5274E;
-        background-color: #F5EBC9; } }
+        background-color: transparent; } }
   .home__btn-right {
     grid-row: 2/3;
     grid-column: 3/ 4;
@@ -435,7 +435,7 @@ body {
         align-self: start;
         text-decoration: underline;
         color: #E5274E;
-        background-color: #F5EBC9; } }
+        background-color: transparent; } }
 
 .social-media {
   grid-column: 3 /4;
@@ -496,7 +496,8 @@ body {
     margin-right: 2rem;
     font-weight: 300;
     font-style: italic;
-    transition: all ease .3s; }
+    transition: all ease .3s;
+    text-decoration: underline; }
     @media only screen and (max-width: 50em) {
       .works__view {
         margin-right: 0;
@@ -624,6 +625,19 @@ body {
       width: 100%;
       animation: moveRight 3s ease infinite;
       justify-self: start; }
+      @media only screen and (max-width: 37.5em) {
+        .block-intro__icon-1 {
+          display: none; } }
+    .block-intro__icon-2 {
+      display: none;
+      fill: #E5274E;
+      height: 70%;
+      width: 70%;
+      justify-self: start;
+      animation: moveUp 3s ease infinite; }
+      @media only screen and (max-width: 37.5em) {
+        .block-intro__icon-2 {
+          display: block; } }
 
 @keyframes moveRight {
   0% {
@@ -631,6 +645,14 @@ body {
     opacity: 1; }
   100% {
     transform: translateX(10rem);
+    opacity: 0; } }
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(3rem);
+    opacity: 1; }
+  100% {
+    transform: translateY(-13rem);
     opacity: 0; } }
     .block-intro__icon-title {
       color: #FFBFBF;
@@ -640,6 +662,9 @@ body {
       text-transform: uppercase;
       text-align: right;
       align-self: end; }
+      @media only screen and (max-width: 37.5em) {
+        .block-intro__icon-title {
+          align-self: end; } }
   .block-intro__title {
     font-size: 3.2rem;
     font-weight: 900;

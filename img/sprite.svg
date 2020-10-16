@@ -3,6 +3,9 @@
 <symbol id="icon-controller-play" viewBox="0 0 20 20">
 <path d="M15 10.001c0 0.299-0.305 0.514-0.305 0.514l-8.561 5.303c-0.624 0.409-1.134 0.106-1.134-0.669v-10.297c0-0.777 0.51-1.078 1.135-0.67l8.561 5.305c-0.001 0 0.304 0.215 0.304 0.514z"></path>
 </symbol>
+<symbol id="icon-select-arrows" viewBox="0 0 20 20">
+<path d="M10 1l-5 7h10l-5-7zM10 19l5-7h-10l5 7z"></path>
+</symbol>
 <symbol id="icon-triangle-right" viewBox="0 0 20 20">
 <path d="M15 10l-9 5v-10l9 5z"></path>
 </symbol>

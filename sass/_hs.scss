@@ -81,11 +81,33 @@
       width: 100%;
       animation:moveRight 3s ease infinite;
       justify-self: start;
+
+      @media only screen and (max-width:$bp-small ) {
+        display: none;      
+      }
+    }
+
+    &-2 {
+      display: none;
+      fill: $color-primary;
+      height: 70%;
+      width: 70%;
+      justify-self: start;
+      animation:moveUp 3s ease infinite;
+
+      @media only screen and (max-width:$bp-small ) {
+        display: block;      
+      }
     }
 
     @keyframes moveRight {
       0%   {transform:translateX(-3rem); opacity: 1;}
       100% {transform:translateX(10rem); opacity: 0;}
+    }
+
+    @keyframes moveUp {
+      0%   {transform:translateY(3rem); opacity: 1;}
+      100% {transform:translateY(-13rem); opacity: 0;}
     }
 
     &-title {
@@ -96,6 +118,11 @@
       text-transform: uppercase;
       text-align: right;
       align-self: end;
+
+      @media only screen and (max-width:$bp-small ) {
+        align-self: end;
+      }
+
     }
   }
 
