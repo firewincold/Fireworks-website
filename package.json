@@ -17,11 +17,19 @@
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
     "horizontal-scroll": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firewincold/Fireworks-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/firewincold/Fireworks-website/issues"
+  },
+  "homepage": "https://github.com/firewincold/Fireworks-website#readme"
 }
