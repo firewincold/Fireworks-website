@@ -605,7 +605,8 @@ body {
   padding: 0 5rem 30rem 15rem; }
   @media only screen and (max-width: 37.5em) {
     .block-intro {
-      width: 100vw; } }
+      width: 100vw;
+      padding: 0 5rem 30rem 8rem; } }
   .block-intro__icon {
     display: grid;
     grid-template-columns: repeat(2, 50%);
