@@ -187,8 +187,12 @@ iframe {
   width:76.8rem; 
   height:43.2rem;
   transform: translateY(-20vh);
+  @media only screen and (max-width:$bp-small ) {
+    width:53.76em; 
+    height:30.24rem;
+    transform: translateY(-40vh);
+  }
 }
-
 
 .block3, .block4, .block5, .block6 {
   &__pic2{

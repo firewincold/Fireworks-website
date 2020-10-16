@@ -709,6 +709,11 @@ iframe {
   width: 76.8rem;
   height: 43.2rem;
   transform: translateY(-20vh); }
+  @media only screen and (max-width: 37.5em) {
+    iframe {
+      width: 53.76em;
+      height: 30.24rem;
+      transform: translateY(-40vh); } }
 
 .block3__pic2, .block4__pic2, .block5__pic2, .block6__pic2 {
   transform: scale(0.7) translateX(-10rem); }
