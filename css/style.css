@@ -415,7 +415,8 @@ body {
         transform: rotate(0deg);
         align-self: start;
         text-decoration: underline;
-        color: #E5274E; } }
+        color: #E5274E;
+        background-color: #F5EBC9; } }
   .home__btn-right {
     grid-row: 2/3;
     grid-column: 3/ 4;
@@ -433,7 +434,8 @@ body {
         transform: rotate(0deg);
         align-self: start;
         text-decoration: underline;
-        color: #E5274E; } }
+        color: #E5274E;
+        background-color: #F5EBC9; } }
 
 .social-media {
   grid-column: 3 /4;
@@ -636,7 +638,8 @@ body {
       font-size: 5.6rem;
       line-height: 4.2rem;
       text-transform: uppercase;
-      text-align: end; }
+      text-align: right;
+      align-self: end; }
   .block-intro__title {
     font-size: 3.2rem;
     font-weight: 900;
