@@ -14,6 +14,13 @@ function goLeft() {
   document.getElementById("container5").style.transform  = 'translate(100vw, 0%) ';
   document.getElementById("container6").style.transform  = 'translate(100vw, 0%) ';
 
+  document.getElementById('p1').classList.remove('heroimghidden');
+  document.getElementById('p3').classList.add('heroimghidden');
+  document.getElementById('p2').classList.add('heroimghidden');
+  document.getElementById('p4').classList.add('heroimghidden');
+  document.getElementById('p5').classList.add('heroimghidden');
+  document.getElementById('p6').classList.add('heroimghidden');
+
   var x, i;
   x = document.querySelectorAll(".home__dots");
   for (i = 0; i < x.length; i++) {
@@ -145,21 +152,77 @@ function defaultActive() {
 }
 
 //work-list hero pictures change----------------
+//function switchPic1() {
+//  document.getElementById('hero').src='img/hero/project1-hero.jpg';
+//}
+//function switchPic2() {
+//  document.getElementById('hero').src='img/hero/project2-hero.png'
+//}
+//function switchPic3() {
+//  document.getElementById('hero').src='img/hero/project3-hero.jpg'
+//}
+//function switchPic4() {
+//  document.getElementById('hero').src='img/hero/project4-hero.jpg'
+//}
+//function switchPic5() {
+//  document.getElementById('hero').src='img/hero/project5-hero.jpg'
+//}
+//function switchPic6() {
+//  document.getElementById('hero').src='img/hero/project6-hero.png'
+//}
+
 function switchPic1() {
-  document.getElementById('hero').src='img/hero/project1-hero.jpg';
+  document.getElementById('p1').classList.remove('heroimghidden');
+  document.getElementById('p3').classList.add('heroimghidden');
+  document.getElementById('p2').classList.add('heroimghidden');
+  document.getElementById('p4').classList.add('heroimghidden');
+  document.getElementById('p5').classList.add('heroimghidden');
+  document.getElementById('p6').classList.add('heroimghidden');
 }
 function switchPic2() {
-  document.getElementById('hero').src='img/hero/project2-hero.png'
+  document.getElementById('p2').classList.remove('heroimghidden');
+  document.getElementById('p1').classList.add('heroimghidden');
+  document.getElementById('p3').classList.add('heroimghidden');
+  document.getElementById('p4').classList.add('heroimghidden');
+  document.getElementById('p5').classList.add('heroimghidden');
+  document.getElementById('p6').classList.add('heroimghidden');
 }
 function switchPic3() {
-  document.getElementById('hero').src='img/hero/project3-hero.jpg'
+  document.getElementById('p3').classList.remove('heroimghidden');
+  document.getElementById('p1').classList.add('heroimghidden');
+  document.getElementById('p2').classList.add('heroimghidden');
+  document.getElementById('p4').classList.add('heroimghidden');
+  document.getElementById('p5').classList.add('heroimghidden');
+  document.getElementById('p6').classList.add('heroimghidden');
+
+
 }
 function switchPic4() {
-  document.getElementById('hero').src='img/hero/project4-hero.jpg'
+  document.getElementById('p4').classList.remove('heroimghidden');
+  document.getElementById('p1').classList.add('heroimghidden');
+  document.getElementById('p2').classList.add('heroimghidden');
+  document.getElementById('p3').classList.add('heroimghidden');
+  document.getElementById('p5').classList.add('heroimghidden');
+  document.getElementById('p6').classList.add('heroimghidden');
+
+
 }
 function switchPic5() {
-  document.getElementById('hero').src='img/hero/project5-hero.jpg'
+  document.getElementById('p5').classList.remove('heroimghidden');
+  document.getElementById('p1').classList.add('heroimghidden');
+  document.getElementById('p2').classList.add('heroimghidden');
+  document.getElementById('p4').classList.add('heroimghidden');
+  document.getElementById('p3').classList.add('heroimghidden');
+  document.getElementById('p6').classList.add('heroimghidden');
+
+
 }
 function switchPic6() {
-  document.getElementById('hero').src='img/hero/project6-hero.png'
+  document.getElementById('p6').classList.remove('heroimghidden');
+  document.getElementById('p1').classList.add('heroimghidden');
+  document.getElementById('p2').classList.add('heroimghidden');
+  document.getElementById('p4').classList.add('heroimghidden');
+  document.getElementById('p5').classList.add('heroimghidden');
+  document.getElementById('p3').classList.add('heroimghidden');
+
 }

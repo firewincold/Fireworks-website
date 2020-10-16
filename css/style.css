@@ -563,6 +563,9 @@ body {
         .works__list-item {
           padding: 2rem 6rem; } }
 
+.heroimghidden {
+  display: none; }
+
 .container2 {
   position: absolute !important;
   transform: translate(100vw, 0);
