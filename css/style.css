@@ -651,12 +651,13 @@ body {
       margin-left: 1rem;
       font-size: 1.4rem;
       font-weight: 300;
-      font-style: italic; }
+      font-style: italic;
+      text-align: right; }
   .block-intro__text {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 2.2rem;
-    text-align: end; }
+    text-align: right; }
 
 .block-end {
   height: 100vh;
@@ -675,3 +676,15 @@ iframe {
 
 .block3__pic3, .block4__pic3, .block5__pic3, .block6__pic3 {
   transform: scale(0.7) translateX(-18rem); }
+
+@media only screen and (max-width: 37.5em) {
+  .scroll-big {
+    display: none; } }
+
+.scroll-small {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .scroll-small {
+      display: block;
+      font-size: 4rem;
+      line-height: 3rem; } }
