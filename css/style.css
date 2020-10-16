@@ -64,7 +64,7 @@ body {
     color: #F5EBC9; }
   @media only screen and (max-width: 37.5em) {
     .btn {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 700; } }
 
 .works__list .works__list-item:nth-child(7)::before {
@@ -405,7 +405,9 @@ body {
     justify-self: start;
     transform: rotate(-90deg);
     transform-origin: top left;
-    z-index: 2000; }
+    z-index: 2000;
+    background-color: #FFBFBF;
+    color: #E5274E; }
     @media only screen and (max-width: 37.5em) {
       .home__btn-left {
         grid-row: 1/ 2;
@@ -421,7 +423,9 @@ body {
     justify-self: end;
     transform: rotate(90deg);
     transform-origin: top right;
-    z-index: 2000; }
+    z-index: 2000;
+    background-color: #FFBFBF;
+    color: #E5274E; }
     @media only screen and (max-width: 37.5em) {
       .home__btn-right {
         grid-row: 1/ 2;

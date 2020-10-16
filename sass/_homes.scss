@@ -170,6 +170,8 @@
         transform: rotate(-90deg);
         transform-origin: top left;
         z-index: 2000;
+        background-color: $color-primary-light;
+        color: $color-primary;
         
         @media only screen and (max-width:$bp-small ) {
             grid-row: 1/ 2;
@@ -190,6 +192,8 @@
         transform: rotate(90deg);
         transform-origin: top right;
         z-index: 2000;
+        background-color: $color-primary-light;
+        color: $color-primary;
 
         @media only screen and (max-width:$bp-small ) {
             grid-row: 1/ 2;
@@ -197,7 +201,6 @@
             transform: rotate(0deg);
             align-self: start;
             text-decoration: underline;
-            //border: solid 1px $color-primary;
             color: $color-primary;
         }
     }
