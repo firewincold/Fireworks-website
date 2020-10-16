@@ -649,11 +649,14 @@ body {
 
 @keyframes moveUp {
   0% {
-    transform: translateY(3rem);
+    transform: translateY(5rem);
+    opacity: 1; }
+  50% {
+    transform: translateY(-5rem);
     opacity: 1; }
   100% {
-    transform: translateY(-13rem);
-    opacity: 0; } }
+    transform: translateY(5rem);
+    opacity: 1; } }
     .block-intro__icon-title {
       color: #FFBFBF;
       font-weight: 900;
