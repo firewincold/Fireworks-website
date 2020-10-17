@@ -41,8 +41,15 @@
                 </div>
         </div>
         
-        <div class="home " >            
-            <img src="img/secondary-logo.png" onClick="goHome()" alt="fireworks secondary logo" class="home__secondary-logo">
+        <div class="home " >   
+            <img srcset="img/secondary-logo-s.png 200w, img/secondary-logo.png 500w"
+            media="(max-width: 600px) 200px, 500px"
+            alt="fireworks secondary logo" 
+            class="home__secondary-logo"
+            onClick="goHome()"
+            src="img/secondary-logo.png"
+            >         
+
             <div class="social-media">
                 <svg class="social-media__ins">
                     <a href="https://www.instagram.com/firewincold/" target="_blank"><use xlink:href="img/sprite.svg#icon-instagram"></use></a>
@@ -81,10 +88,12 @@
                 src="img/hero/project1-hero.jpg"
                 >
                 <img 
-                src="img/hero/project2-hero.png"
+                srcset="img/hero/project2-hero-s.png 600w, img/hero/project2-hero.png 977w"
+                media="(max-width: 600px) 600px, 977px"
                 id="p2" 
                 alt="museum main picture" 
                 class="works__piccontainer-p2 heroimghidden"
+                src="img/hero/project2-hero.png"
                 >
                 <img srcset="img/hero/project3-hero-s.jpg 1080w, img/hero/project3-hero.jpg 1925w"
                 media="(max-width: 600px) 1080px, 1925px"
